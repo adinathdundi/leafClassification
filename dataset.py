@@ -13,11 +13,6 @@ Works entirely off the PlantVillage `segmented/` folder — `color/` and
                 ...
             ... (38 classes total)
 
-Why this works: PlantVillage's segmentation process only zeroes out the
-background around each leaf — it does not alter the leaf's own pixels. So
-`segmented/` images still contain full color and texture information for
-the leaf itself; the only thing removed is the (uninformative) card/table
-background behind it.
 
 That means we can build BOTH inputs from this one folder:
     mode="rgb"  -> load the segmented image as-is (leaf color+texture,

@@ -3,6 +3,9 @@
 How much is the structure of the leaf explained by the structure alone? On average(over all leaves), I got a 60% accuracy in a classification task in an ablation after considering only a binary silhouette of a leaf. 
 This project uses the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) (54,000+ images, 38 plant/disease classes) for a 38 class classification task trained on a ResNet18 model[ResNet Architecture](https://arxiv.org/abs/1512.03385)
 
+RGB+Texture+Shape vs Binary Mask
+![Sample Image](comparison_outputs/sample_image.png.png)
+
 ## Results
 
 | Input | Test accuracy |
@@ -15,7 +18,7 @@ This project uses the [PlantVillage dataset](https://www.kaggle.com/datasets/abd
 ![Overall accuracy comparison](comparison_outputs/accuracy_comparison.png)
 
 
-
+Largest gap in accuracy per class:
 ![Per-class accuracy gap](comparison_outputs/per_class_gap.png)
 
 This makes biological sense: diseases that visibly warp, curl, or fold the blade itself (viral leaf curl, certain blights) show up strongly in shape; diseases that are essentially surface blemishes (bacterial spot, rust) leave the blade's overall geometry untouched and only show up in color/texture.
