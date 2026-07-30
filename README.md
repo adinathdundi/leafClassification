@@ -4,7 +4,7 @@ How much is the structure of the leaf explained by the structure alone? On avera
 This project uses the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) (54,000+ images, 38 plant/disease classes) for a 38 class classification task trained on a ResNet18 model[ResNet Architecture](https://arxiv.org/abs/1512.03385)
 
 RGB+Texture+Shape vs Binary Mask
-![Sample Image](comparison_outputs/sample_image.png.png)
+![Sample Image](comparison_outputs/sample_image.png)
 
 ## Results
 
