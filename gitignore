@@ -1,0 +1,19 @@
+# Dataset (way too large for git — download separately from Kaggle)
+plantvillage_dataset/
+
+# Trained model checkpoints (large binary files, don't belong in git)
+runs/
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+.idea/
